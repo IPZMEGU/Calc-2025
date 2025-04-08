@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ідеальний Калькулятор</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+        .calculator {
+            width: 320px;
+            border-radius: 40px;
+            background: black;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .history {
+            color: #888;
+            font-size: 1em;
+            text-align: right;
+            padding: 0 20px;
+            min-height: 20px;
+        }
+        .display {
+            width: 100%;
+            font-size: 2.5em;
+            text-align: right;
+            padding: 20px;
+            color: white;
+            background: black;
+            border: none;
+            outline: none;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        button {
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.8em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-gray { background: #A5A5A5; color: black; }
+        .btn-orange { background: #FF9500; color: white; }
+        .btn-dark { background: #333; color: white; }
+        .btn-zero {
+            grid-column: span 2;
+            width: 150px;
+            border-radius: 35px;
+            text-align: left;
+            padding-left: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="history" id="history"></div>
+        <input type="text" id="display" class="display" readonly>
+        <div class="buttons">
+            <button class="btn-gray" onclick="calc.clear()">C</button>
+            <button class="btn-gray" onclick="calc.memoryClear()">MC</button>
+            <button class="btn-gray" onclick="calc.memoryRecall()">MR</button>
+            <button class="btn-orange" onclick="calc.input('/')">÷</button>
+
+            <button class="btn-dark" onclick="calc.input('7')">7</button>
+            <button class="btn-dark" onclick="calc.input('8')">8</button>
+            <button class="btn-dark" onclick="calc.input('9')">9</button>
+            <button class="btn-orange" onclick="calc.input('*')">×</button>
+
+            <button class="btn-dark" onclick="calc.input('4')">4</button>
+            <button class="btn-dark" onclick="calc.input('5')">5</button>
+            <button class="btn-dark" onclick="calc.input('6')">6</button>
+            <button class="btn-orange" onclick="calc.input('-')">−</button>
+
+            <button class="btn-dark" onclick="calc.input('1')">1</button>
+            <button class="btn-dark" onclick="calc.input('2')">2</button>
+            <button class="btn-dark" onclick="calc.input('3')">3</button>
+            <button class="btn-orange" onclick="calc.input('+')">+</button>
+
+            <button class="btn-dark btn-zero" onclick="calc.input('0')">0</button>
+            <button class="btn-dark" onclick="calc.input('.')">.</button>
+            <button class="btn-orange" onclick="calc.calculate()">=</button>
+
+            <button class="btn-gray" onclick="calc.memoryAdd()">M+</button>
+            <button class="btn-gray" onclick="calc.memorySubtract()">M-</button>
+            <button class="btn-gray" onclick="calc.percent()">%</button>
+            <button class="btn-gray" onclick="calc.sqrt()">√</button>
+            <button class="btn-gray" onclick="calc.square()">^2</button>
+        </div>
+    </div>
+    <script>
+        class Calculator {
+            constructor() {
+                this.display = document.getElementById('display');
+                this.history = document.getElementById('history');
+                this.buffer = '0';
+                this.expression = '';
+                this.memory = 0;
+                this.updateDisplay();
+            }
+
+            input(value) {
+                if (this.buffer === 'NaN') this.clear();
+
+                if (['+', '-', '*', '/'].includes(value)) {
+                    if (this.buffer === '' || this.buffer.endsWith('.')) return;
+
+                    if (this.expression && this.buffer) {
+                        this.expression += this.buffer;
+                        try {
+                            const result = eval(this.expression);
+                            this.buffer = parseFloat(result).toFixed(10).replace(/\.?0+$/, '');
+                        } catch {
+                            this.buffer = 'NaN';
+                        }
+                    }
+
+                    this.expression = this.buffer + value;
+                    this.buffer = '';
+                    this.updateDisplay();
+                    this.history.textContent = this.expression;
+                } else {
+                    if (value === '.' && this.buffer.includes('.')) return;
+                    if (this.buffer === '0' && value !== '.') this.buffer = '';
+                    this.buffer += value;
+                    this.updateDisplay();
+                }
+            }
+
+            updateDisplay(value = null) {
+                this.display.value = value !== null ? value : this.buffer;
+            }
+
+            clear() {
+                this.buffer = '0';
+                this.expression = '';
+                this.updateDisplay();
+                this.history.textContent = '';
+            }
+
+            calculate() {
+                if (this.expression && this.buffer) {
+                    this.expression += this.buffer;
+                }
+
+                try {
+                    let result = eval(this.expression || this.buffer);
+                    this.buffer = parseFloat(result).toFixed(10).replace(/\.?0+$/, '');
+                    this.expression = '';
+                    this.updateDisplay();
+                    this.history.textContent = '';
+                } catch {
+                    this.clear();
+                    alert('Помилка!');
+                }
+            }
+
+            percent() {
+                this.buffer = (parseFloat(this.buffer) / 100).toString();
+                this.updateDisplay();
+            }
+
+            sqrt() {
+                this.buffer = Math.sqrt(parseFloat(this.buffer)).toString();
+                this.updateDisplay();
+            }
+
+            square() {
+                this.buffer = Math.pow(parseFloat(this.buffer), 2).toString();
+                this.updateDisplay();
+            }
+
+            memoryAdd() {
+                this.memory += parseFloat(this.buffer);
+            }
+
+            memorySubtract() {
+                this.memory -= parseFloat(this.buffer);
+            }
+
+            memoryRecall() {
+                this.buffer = this.memory.toString();
+                this.updateDisplay();
+            }
+
+            memoryClear() {
+                this.memory = 0;
+            }
+        }
+
+        const calc = new Calculator();
+    </script>
+</body>
+</html>

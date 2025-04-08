@@ -19,6 +19,7 @@ using CalcKutsevychc;
 using Calc_Makhniuk;
 using Calc_VladyslavM;
 using CalcKostiuk;
+using CalcDzhura;
 
 namespace Calc_2023
 {
@@ -112,6 +113,12 @@ namespace Calc_2023
         {
             Calc_Kostiuk KostDenis = new Calc_Kostiuk();
             KostDenis.ShowDialog();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            FormCalcDzhura v = new FormCalcDzhura();
+            v.ShowDialog();
         }
     }
 }

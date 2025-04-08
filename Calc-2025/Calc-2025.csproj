@@ -108,6 +108,12 @@
     <Compile Include="Calc_Katerynych.designer.cs">
       <DependentUpon>Calc_Katerynych.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCalcDzhura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalcDzhura.Designer.cs">
+      <DependentUpon>FormCalcDzhura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCalcKutsevychc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calc_Katerynych.resx">
       <DependentUpon>Calc_Katerynych.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalcDzhura.resx">
+      <DependentUpon>FormCalcDzhura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCalcKutsevychc.resx">
       <DependentUpon>FormCalcKutsevychc.cs</DependentUpon>
