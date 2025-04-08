@@ -12,7 +12,7 @@ namespace LROOP7
 {
     public partial class CalcFK2 : Form
     {
-        bool resultTablo = false;
+        bool resultTablo  =  false;
         string prevOperation = "";
         public CalcFK2()
         {
