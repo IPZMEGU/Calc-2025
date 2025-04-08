@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{775199BA-5091-4C88-8A1B-1FAFEBDDC95F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Calc_2023</RootNamespace>
+    <AssemblyName>Calc-2023</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalcHlinskih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcHlinskih.designer.cs">
+      <DependentUpon>CalcHlinskih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcKostiuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcKostiuk.Designer.cs">
+      <DependentUpon>CalcKostiuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcMakhniuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcMakhniuk.designer.cs">
+      <DependentUpon>CalcMakhniuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcMaksymchuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcMaksymchuk.designer.cs">
+      <DependentUpon>CalcMaksymchuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcSH.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="CalcSH.Designer.cs">
+      <DependentUpon>CalcSH.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="CalcFK2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcFK2.designer.cs">
+      <DependentUpon>CalcFK2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcVladyslav.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcVladyslav.designer.cs">
+      <DependentUpon>CalcVladyslav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc_Fomin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc_Fomin.designer.cs">
+      <DependentUpon>Calc_Fomin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcDikal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcDikal.designer.cs">
+      <DependentUpon>CalcDikal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc_Katerynych.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc_Katerynych.designer.cs">
+      <DependentUpon>Calc_Katerynych.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCalcKutsevychc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCalcKutsevychc.designer.cs">
+      <DependentUpon>FormCalcKutsevychc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc_Motrynets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc_Motrynets.designer.cs">
+      <DependentUpon>Calc_Motrynets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formVodyanitski.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formVodyanitski.Designer.cs">
+      <DependentUpon>formVodyanitski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GomonDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GomonDForm.designer.cs">
+      <DependentUpon>GomonDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMathFunctions.cs" />
+    <Compile Include="MathOperation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalcHlinskih.resx">
+      <DependentUpon>CalcHlinskih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcKostiuk.resx">
+      <DependentUpon>CalcKostiuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcMakhniuk.resx">
+      <DependentUpon>CalcMakhniuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcMaksymchuk.resx">
+      <DependentUpon>CalcMaksymchuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcSH.resx">
+      <DependentUpon>CalcSH.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcFK2.resx">
+      <DependentUpon>CalcFK2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcVladyslav.resx">
+      <DependentUpon>CalcVladyslav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc_Fomin.resx">
+      <DependentUpon>Calc_Fomin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcDikal.resx">
+      <DependentUpon>CalcDikal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc_Katerynych.resx">
+      <DependentUpon>Calc_Katerynych.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCalcKutsevychc.resx">
+      <DependentUpon>FormCalcKutsevychc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc_Motrynets.resx">
+      <DependentUpon>Calc_Motrynets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formVodyanitski.resx">
+      <DependentUpon>formVodyanitski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GomonDForm.resx">
+      <DependentUpon>GomonDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
