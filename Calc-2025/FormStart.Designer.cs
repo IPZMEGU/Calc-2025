@@ -44,6 +44,7 @@ namespace Calc_2023
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.btnCalcYakobchuk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -211,11 +212,23 @@ namespace Calc_2023
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // btnCalcYakobchuk
+            // 
+            this.btnCalcYakobchuk.Location = new System.Drawing.Point(17, 234);
+            this.btnCalcYakobchuk.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCalcYakobchuk.Name = "btnCalcYakobchuk";
+            this.btnCalcYakobchuk.Size = new System.Drawing.Size(103, 51);
+            this.btnCalcYakobchuk.TabIndex = 15;
+            this.btnCalcYakobchuk.Text = "Калькулятор Якобчука Олега";
+            this.btnCalcYakobchuk.UseVisualStyleBackColor = true;
+            this.btnCalcYakobchuk.Click += new System.EventHandler(this.btnCalcYakobchuk_Click);
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(642, 450);
+            this.Controls.Add(this.btnCalcYakobchuk);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -231,6 +244,7 @@ namespace Calc_2023
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.KeyPreview = true;
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятори-2023";
@@ -255,6 +269,7 @@ namespace Calc_2023
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnCalcYakobchuk;
     }
 }
 

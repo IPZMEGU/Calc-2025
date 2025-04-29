@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CalculatorGD;
 using LROOP7;
@@ -20,6 +13,9 @@ using Calc_Makhniuk;
 using Calc_VladyslavM;
 using CalcKostiuk;
 using CalcDzhura;
+using Calc_2023.IH23.Yakobchuk.Model;
+using Calc_2023.IH23.Yakobchuk.Presenter;
+using Calc_2023.IH23.Yakobchuk.View;
 
 namespace Calc_2023
 {
@@ -119,6 +115,15 @@ namespace Calc_2023
         {
             FormCalcDzhura v = new FormCalcDzhura();
             v.ShowDialog();
+        }
+
+        private void btnCalcYakobchuk_Click(object sender, EventArgs e)
+        {
+            var model = new CalcModel();
+            var view = new CalcView();
+            var presenter = new CalcPresenter(model, view);
+
+            view.ShowDialog();
         }
     }
 }
