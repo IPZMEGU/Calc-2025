@@ -144,6 +144,18 @@
     <Compile Include="GomonDForm.designer.cs">
       <DependentUpon>GomonDForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="IH23\Yakobchuk\CalcCommandEventArgs.cs" />
+    <Compile Include="IH23\Yakobchuk\Model\CalcModel.cs" />
+    <Compile Include="IH23\Yakobchuk\Model\ICalcModel.cs" />
+    <Compile Include="IH23\Yakobchuk\OperatorType.cs" />
+    <Compile Include="IH23\Yakobchuk\Presenter\CalcPresenter.cs" />
+    <Compile Include="IH23\Yakobchuk\View\CalcView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IH23\Yakobchuk\View\CalcView.Designer.cs">
+      <DependentUpon>CalcView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IH23\Yakobchuk\View\ICalcView.cs" />
     <Compile Include="MainMathFunctions.cs" />
     <Compile Include="MathOperation.cs" />
     <Compile Include="Program.cs" />
@@ -197,6 +209,9 @@
     <EmbeddedResource Include="GomonDForm.resx">
       <DependentUpon>GomonDForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IH23\Yakobchuk\View\CalcView.resx">
+      <DependentUpon>CalcView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -219,5 +234,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
