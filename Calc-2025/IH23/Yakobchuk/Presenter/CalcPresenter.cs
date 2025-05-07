@@ -51,7 +51,7 @@ namespace Calc_2023.IH23.Yakobchuk.Presenter
                 case "/":
                     _model.SetOperation(OperatorType.Divide);
                     break;
-                case "^":
+                case "x^y":
                     _model.SetOperation(OperatorType.Power);
                     break;
                 case "sqrt":
