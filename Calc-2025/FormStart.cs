@@ -16,6 +16,7 @@ using CalcDzhura;
 using Calc_2023.IH23.Yakobchuk.Model;
 using Calc_2023.IH23.Yakobchuk.Presenter;
 using Calc_2023.IH23.Yakobchuk.View;
+using Calc_Vasulushun;
 
 namespace Calc_2023
 {
@@ -124,6 +125,12 @@ namespace Calc_2023
             var presenter = new CalcPresenter(model, view);
 
             view.ShowDialog();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            CalcVasulushun calc = new CalcVasulushun();
+            calc.ShowDialog();
         }
     }
 }

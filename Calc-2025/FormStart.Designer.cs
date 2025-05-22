@@ -45,14 +45,15 @@ namespace Calc_2023
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.btnCalcYakobchuk = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(17, 32);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button1.Location = new System.Drawing.Point(23, 39);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 51);
+            this.button1.Size = new System.Drawing.Size(137, 63);
             this.button1.TabIndex = 0;
             this.button1.Text = "Калькулятор Щирого Олексія";
             this.button1.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@ namespace Calc_2023
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(134, 32);
+            this.button2.Location = new System.Drawing.Point(179, 39);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 51);
+            this.button2.Size = new System.Drawing.Size(137, 63);
             this.button2.TabIndex = 1;
             this.button2.Text = "Калькулятор Гомона Дениса";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@ namespace Calc_2023
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(253, 32);
+            this.button3.Location = new System.Drawing.Point(337, 39);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(99, 51);
+            this.button3.Size = new System.Drawing.Size(132, 63);
             this.button3.TabIndex = 2;
             this.button3.Text = "Калькулятор потоку";
             this.button3.UseVisualStyleBackColor = true;
@@ -81,10 +84,10 @@ namespace Calc_2023
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(367, 32);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button4.Location = new System.Drawing.Point(489, 39);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 51);
+            this.button4.Size = new System.Drawing.Size(137, 63);
             this.button4.TabIndex = 3;
             this.button4.Text = "Калькулятор Мотринець Ярослави";
             this.button4.UseVisualStyleBackColor = true;
@@ -92,9 +95,10 @@ namespace Calc_2023
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(487, 32);
+            this.button5.Location = new System.Drawing.Point(649, 39);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 51);
+            this.button5.Size = new System.Drawing.Size(136, 63);
             this.button5.TabIndex = 4;
             this.button5.Text = "Калькулятор Фоміна Назара";
             this.button5.UseVisualStyleBackColor = true;
@@ -102,10 +106,10 @@ namespace Calc_2023
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(17, 103);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button6.Location = new System.Drawing.Point(23, 127);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(103, 51);
+            this.button6.Size = new System.Drawing.Size(137, 63);
             this.button6.TabIndex = 5;
             this.button6.Text = "Калькулятор Глинських Сергія";
             this.button6.UseVisualStyleBackColor = true;
@@ -113,10 +117,10 @@ namespace Calc_2023
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(134, 103);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button7.Location = new System.Drawing.Point(179, 127);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(103, 51);
+            this.button7.Size = new System.Drawing.Size(137, 63);
             this.button7.TabIndex = 6;
             this.button7.Text = "Калькулятор Дікала Назарія";
             this.button7.UseVisualStyleBackColor = true;
@@ -124,10 +128,10 @@ namespace Calc_2023
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(253, 103);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.button8.Location = new System.Drawing.Point(337, 127);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(103, 51);
+            this.button8.Size = new System.Drawing.Size(137, 63);
             this.button8.TabIndex = 7;
             this.button8.Text = "Калькулятор Катеринича В\'ячеслава";
             this.button8.UseVisualStyleBackColor = true;
@@ -135,10 +139,10 @@ namespace Calc_2023
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(367, 103);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button9.Location = new System.Drawing.Point(489, 127);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(103, 51);
+            this.button9.Size = new System.Drawing.Size(137, 63);
             this.button9.TabIndex = 8;
             this.button9.Text = "Калькулятор Максимчука Павла";
             this.button9.UseVisualStyleBackColor = true;
@@ -146,10 +150,10 @@ namespace Calc_2023
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(486, 103);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button10.Location = new System.Drawing.Point(648, 127);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(103, 51);
+            this.button10.Size = new System.Drawing.Size(137, 63);
             this.button10.TabIndex = 9;
             this.button10.Text = "Калькулятор Водяницького Валентина";
             this.button10.UseVisualStyleBackColor = true;
@@ -157,10 +161,10 @@ namespace Calc_2023
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(17, 168);
-            this.button11.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button11.Location = new System.Drawing.Point(23, 207);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(103, 51);
+            this.button11.Size = new System.Drawing.Size(137, 63);
             this.button11.TabIndex = 10;
             this.button11.Text = "Калькулятор Куцевича Віктора";
             this.button11.UseVisualStyleBackColor = true;
@@ -168,10 +172,10 @@ namespace Calc_2023
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(134, 168);
-            this.button12.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button12.Location = new System.Drawing.Point(179, 207);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(103, 51);
+            this.button12.Size = new System.Drawing.Size(137, 63);
             this.button12.TabIndex = 11;
             this.button12.Text = "Калькулятор Махнюка Владислава";
             this.button12.UseVisualStyleBackColor = true;
@@ -179,10 +183,10 @@ namespace Calc_2023
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(253, 168);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
+            this.button13.Location = new System.Drawing.Point(337, 207);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(103, 51);
+            this.button13.Size = new System.Drawing.Size(137, 63);
             this.button13.TabIndex = 12;
             this.button13.Text = "Калькулятор Мосейчука Владислава";
             this.button13.UseVisualStyleBackColor = true;
@@ -190,9 +194,10 @@ namespace Calc_2023
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(367, 168);
+            this.button14.Location = new System.Drawing.Point(489, 207);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(103, 51);
+            this.button14.Size = new System.Drawing.Size(137, 63);
             this.button14.TabIndex = 13;
             this.button14.Text = "Калькулятор Костюка Дениса";
             this.button14.UseVisualStyleBackColor = true;
@@ -204,9 +209,10 @@ namespace Calc_2023
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button15.ForeColor = System.Drawing.Color.MediumPurple;
-            this.button15.Location = new System.Drawing.Point(486, 168);
+            this.button15.Location = new System.Drawing.Point(648, 207);
+            this.button15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(103, 51);
+            this.button15.Size = new System.Drawing.Size(137, 63);
             this.button15.TabIndex = 14;
             this.button15.Text = "Калькулятор Джура Максим";
             this.button15.UseVisualStyleBackColor = false;
@@ -214,20 +220,32 @@ namespace Calc_2023
             // 
             // btnCalcYakobchuk
             // 
-            this.btnCalcYakobchuk.Location = new System.Drawing.Point(17, 234);
-            this.btnCalcYakobchuk.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCalcYakobchuk.Location = new System.Drawing.Point(23, 288);
+            this.btnCalcYakobchuk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalcYakobchuk.Name = "btnCalcYakobchuk";
-            this.btnCalcYakobchuk.Size = new System.Drawing.Size(103, 51);
+            this.btnCalcYakobchuk.Size = new System.Drawing.Size(137, 63);
             this.btnCalcYakobchuk.TabIndex = 15;
             this.btnCalcYakobchuk.Text = "Калькулятор Якобчука Олега";
             this.btnCalcYakobchuk.UseVisualStyleBackColor = true;
             this.btnCalcYakobchuk.Click += new System.EventHandler(this.btnCalcYakobchuk_Click);
             // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(179, 288);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(137, 63);
+            this.button16.TabIndex = 16;
+            this.button16.Text = "Калькулятор Василишин Микола";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 450);
+            this.ClientSize = new System.Drawing.Size(856, 554);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.btnCalcYakobchuk);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -245,6 +263,7 @@ namespace Calc_2023
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятори-2023";
@@ -270,6 +289,7 @@ namespace Calc_2023
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnCalcYakobchuk;
+        private System.Windows.Forms.Button button16;
     }
 }
 
